@@ -5,6 +5,16 @@ public class Contato {
 	private String nome;
 	private String telefone;
 	
+	public Contato() {
+		
+	}
+	public Contato(String id, String nome, String telefone) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.telefone = telefone;
+	}
+
 	public boolean isNovo() {
 		return id == null;
 	}
@@ -19,15 +29,6 @@ public class Contato {
 		return nome;
 	}
 	
-	public Contato() {
-		
-	}
-	public Contato(String id, String nome, String telefone) {
-		super();
-		this.id = id;
-		this.nome = nome;
-		this.telefone = telefone;
-	}
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
